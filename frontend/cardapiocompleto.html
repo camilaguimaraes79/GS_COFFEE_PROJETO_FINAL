@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS COFFE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script defer src="scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+
+    <header class="header-style">
+        <nav class="container-grid">
+            <img src="assets/images/logo.png" alt="">
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="index.html#sobrenos">Sobre Nós</a></li>
+                <li><a href="index.html#faleconosco">Fale Conosco</a></li>
+            </ul>
+
+            <div>
+                <i id="userIcon" class="bi bi-person"></i>
+                <div id="userGreeting">
+                    <span id="loggedInUser"></span>
+                </div>
+                <i id="cart-icon" class="bi bi-cart4"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- MENU SUPERIOR -->
+        <div class="menu-container">
+
+            <!-- Botão com link para itens -->
+            <a href="#cafes" class="menu-btn">CAFÉS</a>
+            <a href="#chas" class="menu-btn">CHÁS</a>
+            <a href="#doces" class="menu-btn">DOCES</a>
+            <a href="#salgados" class="menu-btn">SALGADOS</a>
+            <a href="#shakes" class="menu-btn">SHAKES</a>
+            <a href="#smoothies" class="menu-btn">SMOOTHIES</a>
+            <a href="#aguaerefrigerantes" class="menu-btn">ÁGUA E REFRIGERANTES</a>
+        </div>
+
+        <!-- CARDÁPIO -->
+        <section class="cardapio-section">
+            <h1 id="cafes" class="secao-titulo">CAFÉS</h1>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/1Expresso.jpg" alt="Expresso" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Café Expresso </h2>
+                    <p class="item-desc">
+                        O café expresso é preparado com grãos selecionados e extraído sob pressão, resultando em uma
+                        bebida
+                        forte, aromática e encorpada..
+                    </p>
+                    <p class="item-price">R$ 6,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/2Cappuccino.jpg" alt="Cappuccino" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Cappuccino </h2>
+                    <p class="item-desc">
+                        O cappuccino combina café expresso, leite vaporizado e uma camada cremosa de espuma, criando uma
+                        bebida suave e equilibrada. Levemente adocicado e com textura aveludada.
+                    </p>
+                    <p class="item-price">R$ 8,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/3Latte.jpg" alt="Latte" class="cardapio-img">
+
+                <div class="cardapio-info">
+                    <h2 class="item-title">Latte</h2>
+                    <p class="item-desc">
+                        Um latte cremoso e equilibrado, feito com café expresso, leite vaporizado e uma delicada arte no
+                        topo.
+                    </p>
+                    <p class="item-price">R$ 8,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/4Affogato.jpg" alt="Affogato" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Affogato</h2>
+                    <p class="item-desc">
+                        Café expresso quente servido sobre sorvete de baunilha, criando um contraste delicioso entre o
+                        calor
+                        do café e a cremosidade gelada. Uma opção doce, leve e perfeita para quem ama café com um toque
+                        especial.
+                    </p>
+                    <p class="item-price">R$ 10,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/5Cold_Brew.jpg" alt="Cold_Brew" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Cold Brew </h2>
+                    <p class="item-desc">
+                        Café preparado por extração a frio, resultando em uma bebida suave, menos ácida e naturalmente
+                        refrescante. Servido gelado, o cold brew é perfeito para quem busca um café leve, aromático e
+                        ideal
+                        para dias quentes.
+                    </p>
+                    <p class="item-price">R$ 7,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/6Frappe.jpg" alt="Frappe" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Frappé de Café</h2>
+                    <p class="item-desc">
+                        Um café gelado batido com gelo, cremoso e refrescante, finalizado com chantilly e calda de
+                        chocolate. Perfeito para quem gosta de uma bebida doce, leve e ideal para se refrescar sem abrir
+                        mão
+                        do sabor do café.
+                    </p>
+                    <p class="item-price">R$ 14,00</p>
+                </div>
+            </div>
+
+            <!-- ÂNCORA (marca a seção CHÁS) -->
+            <h1 id="chas" class="secao-titulo">CHÁS</h1>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/7cha_preto.png" alt="cha preto" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Chá Preto</h2>
+                    <p class="item-desc">
+                        Um chá preto quente, de aroma marcante e cor intensa. Encorpado e reconfortante, é ideal para
+                        quem aprecia sabores mais fortes.
+                    </p>
+                    <p class="item-price">R$ 5,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/8cha _verde.jpg" alt="cha verde" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Chá Verde</h2>
+                    <p class="item-desc">
+                        Um chá verde quente, de aroma marcante e cor intensa. Encorpado e reconfortante, é ideal para
+                        quem aprecia sabores mais fortes.
+                    </p>
+                    <p class="item-price">R$ 5,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/9cha_camomila.png" alt="cha camomila" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Chá de Camomila</h2>
+                    <p class="item-desc">
+                        Um chá preto quente, de aroma marcante e cor intensa. Encorpado e reconfortante, é ideal para
+                        quem aprecia sabores mais fortes.
+                    </p>
+                    <p class="item-price">R$ 5,00</p>
+                </div>
+            </div>
+
+            <!-- ÂNCORA (marca a seção DOCES) -->
+            <h1 id="doces" class="secao-titulo">DOCES</h1>
+
+            <!-- ITEM 1 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/1Banoffee.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Banoffee</h2>
+                    <p class="item-desc">
+                        Torta com banana, doce de leite e chantilly.
+                    </p>
+                    <p class="item-price">R$ 16,90</p>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/2Cenoura_chocolate.png" alt="bolo de cenoura com chocolate"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Bolo de cenoura com chocolate</h2>
+                    <p class="item-desc">
+                        Bolo fofinho de cenoura coberto com uma calda cremosa de chocolate,
+                    </p>
+                    <p class="item-price">R$ 14,90</p>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/3pedaco_cheescake.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Aurora de Frutas Silvestres cheesecake</h2>
+                    <p class="item-desc">
+                        Cheesecake aveludada com base crocante de cacau e um swirl secreto de frutas vermelhas.
+                        Finalizada
+                        com uma festa de frutas frescas e chantilly, é a união perfeita de acidez e cremosidade.
+                    <p class="item-price">R$ 20,90</p>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/4pedaco_torta_limao.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Torta de Limão</h2>
+                    <p class="item-desc">
+                        Base amanteigada e crocante, recheio de limão intenso e aveludado. Coberta por uma nuvem de
+                        suspiro
+                        levemente tostado.
+                    </p>
+                    <p class="item-price">R$ 18,90</p>
+                </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/5pedaco_torta_chocolate.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Torta de Chocolate</h2>
+                    <p class="item-desc">
+                        Base densa de brownie e recheio de ganache 70% cacau, aveludado e intenso. Uma sobremesa de
+                        sabor
+                        profundo que derrete na boca, reservada para os amantes do verdadeiro chocolate.
+                    </p>
+                    <p class="item-price">R$ 18,90</p>
+                </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/6Macarons.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Macarons </h2>
+                    <p class="item-desc">
+                        Casquinhas crocantes de amêndoas com recheios cremosos. Uma paleta de cores e sabores
+                        (chocolate,
+                        pistache, frutas vermelhas, baunilha). A delicadeza e a sofisticação francesa em cada mordida.
+                    </p>
+                    <p class="item-price">R$ 28,00</p>
+                </div>
+            </div>
+
+            <!-- ITEM 7 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/7cupcakes.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Cupcakes </h2>
+                    <p class="item-desc">
+                        Bolo de chocolate fofinho coberto por um frosting cremoso em cores vibrantes. Coroado com frutas
+                        frescas, é a doce explosão de sabor e felicidade em cada mordida.
+                    </p>
+                    <p class="item-price">R$ 8,00 a unidade.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 8 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/8mini_tortas.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title"> Mini Tortas Gourmet</h2>
+                    <p class="item-desc">
+                        Pequenas obras de arte para os olhos e o paladar. Crosta amanteigada e dourada, recheios
+                        vibrantes
+                        de frutas frescas, merengue tostado e chocolate cremoso. Cada mini torta é uma joia, uma
+                        experiência
+                        individual de sabor e requinte.
+                    <p class="item-price">R$ 14,00 a unidade</p>
+                </div>
+            </div>
+
+            <!-- ITEM 9 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/9Cookies.jpg" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Cookies</h2>
+                    <p class="item-desc">
+                        Cookies macios e cheios de sabor, recheados com generosidade. Desfrute da riqueza do Chocolate,
+                        do
+                        contraste do Red Velvet e do toque viciante do Caramelo Salgado. O melhor da confeitaria em suas
+                        mãos.
+                    </p>
+                    <p class="item-price">R$ 15,00 a unidade</p>
+                </div>
+            </div>
+
+            <!-- ITEM 10 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/10Laranja.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Bolo de Laranja</h2>
+                    <p class="item-desc">
+                        Feito com raspas de laranja natural, possui uma textura incrivelmente úmida e um sabor intenso.
+                        É o
+                        par perfeito para o café, elevando o simples a extraordinário.
+                    </p>
+                    <p class="item-price">R$ 7,00</p>
+                </div>
+            </div>
+
+            <!-- ITEM 11 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/11Fuba.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Bolo de Fubá</h2>
+                    <p class="item-desc">
+                        Feito com fubá macio e raspas de laranja natural, tem uma textura úmida e um aroma irresistível.
+                        Um
+                        clássico caseiro que transforma o simples em extraordinário
+                    </p>
+                    <p class="item-price">R$ 7,00</p>
+                </div>
+            </div>
+
+            <!-- ITEM 12 -->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/12Croissant_nutella.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Croissant de Nutella </h2>
+                    <p class="item-desc">
+                        Camadas folhadas, amanteigadas e douradas, recheadas com Nutella cremosa. Uma combinação
+                        irresistível que derrete na boca.
+                    </p>
+                    <p class="item-price">R$ 15,00</p>
+                </div>
+            </div>
+
+            <!-- ITEM 13-->
+            <div class="cardapio-item">
+                <img src="./assets/images/doces/13Croissant_creme.png" alt="Banoffee" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Croissant de Creme </h2>
+                    <p class="item-desc">
+                        Camadas folhadas, amanteigadas e douradas, recheadas com um creme suave e levemente adocicado.
+                        Um clássico irresistível para qualquer momento do dia.
+                    </p>
+                    <p class="item-price">R$ 13,00</p>
+                </div>
+            </div>
+
+            <h1 id="salgados" class="secao-titulo">SALGADOS</h1>
+            <div class="cardapio-item">
+                <img src="./assets/images/salgados/1Croissan_presuntoqueijo.png" alt="Croissan_presuntoqueijo"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Croissant Presunto e Queijo </h2>
+                    <p class="item-desc">
+                        Um croissant dourado e macio, recheado com presunto e queijo derretido. Leve por fora, saboroso
+                        por dentro.
+                    </p>
+                    <p class="item-price">R$ 13,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/salgados/2Sanduiche_natural.png" alt="Sanduiche_natural" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Misto Quente Tostado </h2>
+                    <p class="item-desc">
+                        Pão grelhado , recheado com presunto, queijo derretido e fatias de tomate fresco.</p>
+                    <p class="item-price">R$ 10,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/salgados/3Empada_frango.png" alt="Empada_frango" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Empada de Frango </h2>
+                    <p class="item-desc">
+                        Uma empada tradicional, com massa macia e levemente amanteigada, recheada com frango bem
+                        temperado e cremoso.</p>
+                    <p class="item-price">R$ 12,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/salgados/4Folhado_CarneMoida.png" alt="Folhado_CarneMoida"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Folhato de Carne Moída</h2>
+                    <p class="item-desc">
+                    <p>Um folhado dourado e crocante, recheado com carne moída bem temperada e suculenta. A combinação
+                        perfeita entre massa leve e sabor marcante.</p>
+                    <p class="item-price">R$ 12,00</p>
+                </div>
+            </div>
+
+            <h1 id="shakes" class="secao-titulo">SHAKES</h1>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/10milksahek_chocolate_cereja.jpg" alt="shake_chocolate"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title"> MilkShake Chocolate</h2>
+                    <p class="item-desc">
+                    <p>Feito com um rico chocolate cremoso, este milkshake é finalizado com chantilly generoso, calda de
+                        chocolate, raspas de chocolate e uma cereja no topo.</p>
+                    <p class="item-price">R$ 16,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/11milkshake_frutasvermelhas.jpg" alt="shake_chocolate"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">MilkShake Frutas Vermelhas</h2>
+                    <p class="item-desc">
+                    <p>Feito com sorvete e morango de verdade, este milkshake tem uma textura irresistível. É finalizado
+                        com chantilly, calda de morango, e frutas frescas.</p>
+                    <p class="item-price">R$ 16,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/12milkshake_doce_leite.jpg" alt="shake_morango" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Milkshake de Doce de Leite </h2>
+                    <p class="item-desc">
+                    <p> Este milkshake é puro caramelo batido com sorvete, coberto com calda escorrendo, chantilly e
+                        pedacinhos crocantes de caramelo e amendoim.</p>
+                    <p class="item-price">R$ 16,00</p>
+                </div>
+            </div>
+
+            <h1 id="smoothies" class="secao-titulo">SMOOTHIES</h1>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/13Smoothie.jpg" alt="shake_chocolate" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Smoothie de Frutas Vermelhas</h2>
+                    <p class="item-desc">
+                    <p> Um smoothie incrivelmente refrescante e nutritivo, feito com a mistura perfeita de morangos,
+                        framboesas e mirtilos.</p>
+                    <p class="item-price">R$ 14,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/14smoothie_morango.jpg" alt="shake_chocolate" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Smoothie de Morango</h2>
+                    <p class="item-desc">
+                    <p>Feito com morango fresco, framboesas e mirtilos, este smoothie é incrivelmente refrescante e
+                        nutritivo.</p>
+                    <p class="item-price">R$ 15,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/15smoothie_mirtilo.jpg" alt="shake_chocolate" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Smoothie de Mirtilo</h2>
+                    <p class="item-desc">
+                    <p>Feito com mirtilos frescos, oferece um sabor doce e sofisticado e uma textura super cremosa.</p>
+                    <p class="item-price">R$ 16,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/16smoothie_abacate_banana.jpg" alt="shake_chocolate"
+                    class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Smoothie de Abacate e Banana </h2>
+                    <p class="item-desc">
+                    <p>Feito com abacate fresco para uma textura extra cremosa e a doçura natural da banana.</p>
+                    <p class="item-price">R$ 14,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/17smoothie_manga.jpg" alt="shake_chocolate" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Smoothie de Manga </h2>
+                    <p class="item-desc">
+                    <p>Feito com a manga mais doce, resultando em uma textura suave e cremosa e um sabor intensamente
+                        refrescante.</p>
+                    <p class="item-price">R$ 14,00</p>
+                </div>
+            </div>
+
+            <h1 id="aguaerefrigerantes" class="secao-titulo">ÁGUA E REFRIGERANTES</h1>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/18agua.png" alt="agua" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Água</h2>
+                    <p class="item-desc">
+                    <p> Água Mineral.</p>
+                    <p class="item-price">R$ 5,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/19agua_gas.jpg" alt="agua" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Água com Gás</h2>
+                    <p class="item-desc">
+                    <p> Água com Gás</p>
+                    <p class="item-price">R$ 6,00</p>
+                </div>
+            </div>
+
+            <div class="cardapio-item">
+                <img src="./assets/images/bebidas/20coca_cola.jpg" alt="coca-cola" class="cardapio-img">
+                <div class="cardapio-info">
+                    <h2 class="item-title">Coca-Cola Lata</h2>
+                    <p class="item-desc">
+                    <p> Coca Cola lata</p>
+                    <p class="item-price">R$ 6,00</p>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer-style">
+        <section class="footer-style_1 container-grid">
+            <figure>
+                <img id="logo" src="assets/images/logo.png" alt="">
+            </figure>
+
+            <article>
+                <h1>Horário de Funcionamento</h1>
+                <p>Segunda-Feira à Sábado: 6:00 às 20:00<br>
+                    Domingo: 6:00 às 17:30<br>
+                    Feriados: 6:00 às 14:00
+                </p>
+            </article>
+            <div>
+                <h1>Formas de Pagamentos</h1>
+
+                <img id="formas" src="assets/images/forma-pagamentos 1.png" alt="">
+                <figure>
+                    <img src="assets/icons/icon-pix.svg" alt="">
+                    <img src="assets/icons/money.svg" alt="">
+                </figure>
+            </div>
+
+        </section>
+        <section class="footer-style_2 container-grid">
+            <article>
+                <h1>Contatos</h1>
+                <p>(11) 4002-8922 <span><img src="assets/icons/icon-telefone.svg" alt=""></span>
+                </p>
+
+                <p>
+                    <a href="https://wa.me/5511954908550" target="_blank" rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none;">
+                        (11) 95490-8550 <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" />
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://wa.me/5511949162827" target="_blank" rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none;">
+                        (11) 94916-2827 <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" />
+                    </a>
+                </p>
+
+                <p>Siga a gente</p>
+
+                <a href="https://www.instagram.com/gscoffecafeteria" target="_blank" class="instagram-link">
+                    <i class="bi bi-instagram"></i>
+                    <span>@gscoffeecafeteria</span>
+                </a>
+            </article>
+
+            <article>
+                <h1>Endereço</h1>
+                <p>Av. Ramiro Colleoni, 110 - Vila Bastos, Santo André - SP, 09040-160</p>
+
+            </article>
+
+        </section>
+        <section class="footer-style_3">
+            <p>&copy;Todos direitos reservados - GS COFFE 2026</p>
+        </section>
+    </footer>
+
+
+    <!-- MODAL LOGIN -->
+    <section id="loginModal" class="modal-login">
+        <span class="close">&times;</span>
+
+        <div class="container">
+            <figure>
+                <img class="logoLogin" src="./assets/images/logo.png" alt="logo">
+            </figure>
+
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="form-login" action="#" method="POST" class="form-login">
+                    <input type="text" placeholder="Digite o usuário" required class="inputlc" id="login-username">
+                    <input type="password" placeholder="Digite a senha" required class="inputlc" id="login-password">
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>É novo? Cadastre-se abaixo</h2>
+                <form id="form-signup" action="#" method="POST" class="form-signup">
+                    <input type="text" placeholder="Insira um usuário" required class="inputlc" id="signup-username">
+                    <input type="email" placeholder="Insira um email" required class="inputlc" id="signup-email">
+                    <input type="password" placeholder="Insira uma senha" required class="inputlc" id="signup-password">
+                    <input type="password" placeholder="Confirme sua senha" required class="inputlc"
+                        id="signup-password-confirm">
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="modal-carrinho">
+        <button id="close-cart">X</button>
+
+        <section class="menu container-grid">
+            <h1>Meu Pedido</h1>
+            <!-- <button id="cart-icon"> -->
+            <i class="bi bi-cart4"></i>
+            <!-- </button> -->
+        </section>
+
+
+        </div>
+
+        <section class="total">
+            <div class="table2">
+                <table id="carrinho-table">
+                    <tbody>
+                        <tr>
+                            <td>Total</td>
+                            <td>R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Taxa de entrega</td>
+                            <td class="gratis">Grátis</td>
+                        </tr>
+                        <tr>
+                            <td><b>Subtotal</b></td>
+                            <td><b>R$ 0,00</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="button3">
+            <button class="cancelar" id="cancel-button">Cancelar</button>
+            <button class="finalizar" id="finalizar-compra-button">Finalizar Compra</button>
+        </div>
+    </section>
+    <div id="finalizarModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="finalizar-cadastro">
+                <div class="h1">
+                    <h1>Retirada no Local</h1>
+                </div>
+
+                <div class="dados">
+                    <h3>Usuário</h3>
+                    <p>Maria José</p>
+
+                    <h3>E-mail</h3>
+                    <p>mariajose@gmail.com</p>
+                </div>
+
+                <h2>Atendimento no local</h2>
+
+                <div class="adress">
+                    <h4>O pedido será retirado no balcão, na unidade:</h4>
+                    <p>GS COFFE (Av. Ramiro Colleoni, 110 - Vila Bastos, Santo André - SP, 09040-160)</p>
+                </div>
+
+                <div class="enviar">
+                    <span id="total-amount">Total: R$</span>
+                    <button id="confirmar-pedido-button">
+                        <i class="bi bi-check"></i>
+                        <h5>Confirmar pedido</h5>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="confirmarCancelamento" class="modal">
+        <div class="modal-content">
+            <h3>Cancelar pedido</h3>
+            <p>Deseja cancelar o pedido?</p>
+
+            <div class="botoes-confirmacao">
+                <button id="sim-cancelar" class="btn-sim">Sim</button>
+                <button id="nao-cancelar" class="btn-nao">Não</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        const openMenu = document.getElementById("openMenu");
+        const menu = document.getElementById("menuMobile");
+
+        openMenu.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Mousse de lavanda e Mirtilo",
+      "descricao": "Mousse de lavanda sobre compota de mirtilo e base crocante. Aveludado e sofisticado.",
+      "imagem": "assets/images/osmaispedidos/OMMouseLav.jpg",
+      "preco": 30.00
+    },
+    {
+      "id": "2",
+      "nome": "Cúpula de Frutas Vermelhas",
+      "descricao": "Base sablée, mousse de frutas vermelhas e cúpula de gelatina com flores e ouro. Leve, floral e refrescante.",
+      "imagem": "assets/images/osmaispedidos/OMCupuladeFrutasVermelhas.jpg",
+      "preco": 28.00
+    },
+    {
+      "id": "3",
+      "nome": "Taça Chocolate Morango",
+      "descricao": "Base crocante de chocolate, mousse aveludado e morango com calda vibrante, finalizado com chocolate e ouro.",
+      "imagem": "assets/images/osmaispedidos/OMTacaChocolateMorango.jpg",
+      "preco": 25.00
+    },
+    {
+      "id": "4",
+      "nome": "Chocolate Quente",
+      "descricao": "Chocolate quente rico e cremoso, coroado com chantilly aveludado e uma cascata de ganache. Intenso e reconfortante, é o refúgio perfeito para os dias frios.",
+      "imagem": "assets/images/osmaispedidos/OMChocolateQuente.jpg",
+      "preco": 16.00
+    },
+    {
+      "id": "5",
+      "nome": "Latte Caramelizado",
+      "descricao": "Espresso intenso, leite vaporizado e caramelo em swirl perfeito, finalizado com arte de leite.",
+      "imagem": "assets/images/osmaispedidos/OMLatteCaramelizado.jpg",
+      "preco": 15.00
+    },
+    {
+      "id": "6",
+      "nome": "Supremo Gelado",
+      "descricao": "Café gelado intenso com chantilly, calda de chocolate e sprinkles. Refrescante e indulgente.",
+      "imagem": "assets/images/osmaispedidos/OMSupremoGelado.jpg",
+      "preco": 18.00
+    },
+    {
+      "id": "7",
+      "nome": "Cappuccino Artesanal",
+      "descricao": "Espresso encorpado com leite vaporizado, finalizado com canela, cacau e especiarias aromáticas",
+      "imagem": "assets/images/osmaispedidos/OMCappuccinoEspeciarias.jpg",
+      "preco": 15.00
+    }
+  ]
+}

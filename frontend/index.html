@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS COFFE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <script defer src="scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="header-style">
+        <nav class="container-grid">
+            <img src="assets/images/logo.png" alt="">
+
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#cardapio">Cardápio</a></li>
+                <li><a href="index.html#sobrenos">Sobre Nós</a></li>
+                <li><a href="index.html#faleconosco">Fale Conosco</a></li>
+            </ul>
+            <div>
+                <i id="userIcon" class="bi bi-person"></i>
+                <div id="userGreeting">
+                    <span id="loggedInUser"></span>
+                </div>
+                <i id="cart-icon" class="bi bi-cart4"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="faixa-texto">
+        PARA MOMENTOS QUE MERECEM SER LEMBRADOS
+    </div>
+
+    <main>
+        <section id="inicio" class="banner-style container-grid">
+            <article>
+                <h1>
+                    GS COFFEE
+                </h1>
+                <p>
+                    Experimente algo único em cada gole, como se cada xícara fosse preparada especialmente para você.
+                </p>
+                <div>
+                    <a href="cardapiocompleto.html" class="btn-cardapio">Cardápio Completo</a>
+
+                </div>
+            </article>
+            <img src="./assets/images/cafeflutuante1.png" alt="">
+        </section>
+
+        <section id="cardapio" class="section-cardapio container-grid">
+            <h1>Os mais pedidos da GS COFFEE!</h1>
+
+            <section class="section-cardapio__cards">
+                <svg id="seta-esquerda" width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M16 5l-8 7 8 7" fill="none" stroke="#603319" stroke-width="2" />
+                </svg>
+
+                <div id="card-container" class="carousel">
+                </div>
+
+                <svg id="seta-direita" width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M8 5l8 7-8 7" fill="none" stroke="#603319" stroke-width="2" />
+                </svg>
+            </section>
+
+            <section id="sobrenos" class="section-sobrenos">
+                <h1>Sobre GS COFFEE</h1>
+
+                <p>A GS COFFEE nasceu para transformar o café em uma experiência. Com bebidas especiais, doces
+                    artesanais e um ambiente acolhedor,
+                    oferecemos o lugar ideal para relaxar, trabalhar ou aproveitar bons momentos. Cada detalhe é pensado
+                    com carinho para tornar
+                    seu dia mais especial.</p>
+
+                <h2>Conheça um pouco sobre o nosso espaço logo abaixo:</h2>
+
+                <section class="slider">
+                    <div class="slider-content">
+
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <input type="radio" name="btn-radio" id="radio4">
+
+                        <div class="slide-box primeiro">
+                            <img class="img-desktop" src="./assets/images/ambiente/Fachada.png" alt="slide1">
+                        </div>
+
+                        <div class="slide-box">
+                            <img class="img-desktop" src="./assets/images/ambiente/Deck.png" alt="slide2">
+                        </div>
+
+                        <div class="slide-box">
+                            <img class="img-desktop" src="./assets/images/ambiente/AmbienteInterno.png" alt="slide3">
+                        </div>
+
+                        <div class="slide-box">
+                            <img class="img-desktop" src="./assets/images/ambiente/VitrineDoces.png" alt="slide4">
+                        </div>
+
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+
+                        <div class="nav-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+
+
+                    </div>
+                </section>
+            </section>
+    </main>
+
+    <footer id="faleconosco" class="footer-style">
+        <section class="footer-style_1 container-grid">
+
+            <article>
+                <h1>Horário de Funcionamento</h1>
+                <p>Segunda-Feira à Sábado: 6:00 às 20:00<br>
+                    Domingo: 6:00 às 17:30<br>
+                    Feriados: 6:00 às 14:00
+                </p>
+            </article>
+            <div>
+                <h1>Formas de Pagamentos</h1>
+
+                <img id="formas" src="assets/images/forma-pagamentos 1.png" alt="">
+                <figure>
+                    <img src="assets/icons/icon-pix.svg" alt="">
+                    <img src="assets/icons/money.svg" alt="">
+                </figure>
+            </div>
+
+        </section>
+        <section class="footer-style_2 container-grid">
+            <article>
+                <h1>Contatos</h1>
+                <p>(11) 4002-8922 <span><img src="assets/icons/icon-telefone.svg" alt=""></span>
+                </p>
+
+                <p>
+                    <a href="https://wa.me/5511954908550" target="_blank" rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none;">
+                        (11) 95490-8550 <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" />
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://wa.me/5511949162827" target="_blank" rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none;">
+                        (11) 94916-2827 <img src="assets/icons/icon-whatsapp.svg" alt="WhatsApp" />
+                    </a>
+                </p>
+
+
+                <p>Siga a gente</p>
+
+                <a href="https://www.instagram.com/gscoffecafeteria" target="_blank" class="instagram-link">
+                    <i class="bi bi-instagram"></i>
+                    <span>@gscoffeecafeteria</span>
+                </a>
+            </article>
+
+            <article>
+                <h1>Endereço 📍</h1>
+                <p><a href="https://www.google.com/maps?q=Av.+Ramiro+Colleoni,+110+-+Vila+Bastos,+Santo+André+-+SP"
+                        target="_blank" rel="noopener noreferrer" class="endereco-link">
+                        Av. Ramiro Colleoni, 110 - Vila Bastos, Santo André - SP, 09040-160
+                    </a></p>
+            </article>
+
+        </section>
+        <section class="footer-style_3">
+            <p>&copy;Todos direitos reservados - GS COFFE 2026</p>
+        </section>
+    </footer>
+    <section id="loginModal" class="modal-login">
+        <span class="close">&times;</span>
+
+        <div class="container">
+            <figure>
+                <img class="logoLogin" src="./assets/images/logo.png" alt="logo">
+            </figure>
+
+            <div class="form-container">
+                <h2>Login</h2>
+                <!-- Formulário de Login -->
+                <form id="form-login" action="#" method="POST" class="form-login">
+                    <input type="text" placeholder="Digite o usuário" required class="inputlc" id="login-username">
+                    <input type="password" placeholder="Digite a senha" required class="inputlc" id="login-password">
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>É novo? Cadastre-se abaixo</h2>
+                <!-- Formulário de Cadastro -->
+                <form id="form-signup" action="#" method="POST" class="form-signup">
+                    <input type="text" placeholder="Insira um usuário" required class="inputlc" id="signup-username">
+                    <input type="email" placeholder="Insira um email" required class="inputlc" id="signup-email">
+                    <input type="password" placeholder="Insira uma senha" required class="inputlc" id="signup-password">
+                    <input type="password" placeholder="Confirme sua senha" required class="inputlc"
+                        id="signup-password-confirm">
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="cart" class="modal-carrinho">
+        <button id="close-cart">X</button>
+
+        <section class="menu container-grid">
+            <h1>Meu Pedido</h1>
+            <!-- <button id="cart-icon"> -->
+            <i class="bi bi-cart4"></i>
+            <!-- </button> -->
+        </section>
+
+
+        </div>
+
+        <section class="total">
+            <div class="table2">
+                <table id="carrinho-table">
+                    <tbody>
+                        <tr>
+                            <td>Total</td>
+                            <td>R$ 0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Taxa de entrega</td>
+                            <td class="gratis">Grátis</td>
+                        </tr>
+                        <tr>
+                            <td><b>Subtotal</b></td>
+                            <td><b>R$ 0,00</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="button3">
+            <button class="cancelar" id="cancel-button">Cancelar</button>
+            <button class="finalizar" id="finalizar-compra-button">Finalizar Compra</button>
+        </div>
+    </section>
+    <div id="finalizarModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="finalizar-cadastro">
+                <div class="h1">
+                    <h1>Retirada no Local</h1>
+                </div>
+
+                <div class="dados">
+                    <h3>Usuário</h3>
+                    <p>Maria José</p>
+
+                    <h3>E-mail</h3>
+                    <p>mariajose@gmail.com</p>
+                </div>
+
+                <h2>Atendimento no local</h2>
+
+                <div class="adress">
+                    <h4>O pedido será retirado no balcão, na unidade:</h4>
+                    <p>GS COFFE (Av. Ramiro Colleoni, 110 - Vila Bastos, Santo André - SP, 09040-160)</p>
+                </div>
+
+                <div class="enviar">
+                    <span id="total-amount">Total: R$</span>
+                    <button id="confirmar-pedido-button">
+                        <i class="bi bi-check"></i>
+                        <h5>Confirmar pedido</h5>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="confirmarCancelamento" class="modal">
+        <div class="modal-content">
+            <h3>Cancelar pedido</h3>
+            <p>Deseja cancelar o pedido?</p>
+
+            <div class="botoes-confirmacao">
+                <button id="sim-cancelar" class="btn-sim">Sim</button>
+                <button id="nao-cancelar" class="btn-nao">Não</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
